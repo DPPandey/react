@@ -1,3 +1,86 @@
-#heading{
-    color: red;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff; /* white background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+/* Container for the logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo image styling */
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+/* Navigation items container */
+.nav-items ul {
+  display: flex;
+  gap: 20px;
+  list-style: none; /* remove bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+/* Each navigation link */
+.nav-items li {
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s;
+   font-size: 24px; /* Increased font size */
+}
+
+/* Hover effect */
+.nav-items li:hover {
+  color: #007bff; /* blue on hover */
+}
+
+.body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.restaurant-card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
 }
