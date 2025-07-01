@@ -52,6 +52,14 @@ const Body = () => {
           name="Classic Dine"
           image="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&auto=format&fit=crop&q=60"
         />
+         <Restaurant
+          name="Classic Dine"
+          image="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&auto=format&fit=crop&q=60"
+        />
+         <Restaurant
+          name="Classic Dine"
+          image="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&auto=format&fit=crop&q=60"
+        />
       </div>
     </div>
   );
@@ -67,12 +75,21 @@ const Restaurant = ({ name, image }) => (
   </div>
 );
 
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <p>© 2025 FoodApp. All rights reserved.</p>
+    </footer>
+  );
+};
+
 
 const AppLayout=()=>{
   return (
       <div className="app">
          <Header />
          <Body /> 
+          <Footer />
          </div>
   
 );
